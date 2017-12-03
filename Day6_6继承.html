@@ -1,0 +1,43 @@
+<!--
+继承
+外层元素样式会被里面的元素继承
+可继承的标签：文本属性：font-size,font-family,font-weight,font-style,text-decoration,color
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>6_6</title>
+
+    <style type="text/css">
+        .box_one {
+            color: #ff3399;
+            font-size: 19px;
+        }
+
+        b {
+            color: green
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box_one">
+        <p>
+            Study
+            <b>Hard</b>
+
+            <!--本身有的属性不继承，需要重新设置-->
+            <a href="#">Did color change??</a>
+        </p>
+    </div>
+</body>
+
+</html>

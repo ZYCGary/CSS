@@ -1,0 +1,55 @@
+<!--
+边框线-所有标签都可以加边框线
+上边框 右边框 下边框 左边框
+border-top-style：solid/dashed/dotted
+border-top-width:..px
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>5_5</title>
+
+    <style type="text/css">
+        .box_one {
+            width: 500px;
+            height: 800px;
+            /*
+            border-top-width: 1px;
+            border-top-color: red;
+            border-top-style: dashed;
+*/
+            border-top: 1px red dashed;
+            border-right: 1px red solid;
+            border-bottom: 3px red dotted;
+            border-left: 1px red solid;
+        }
+
+        .box_two {
+            width: 998px;
+            height: 48px;
+            border-top: 2px #208c82 solid;
+            border-bottom: 1px solid #a0a0a0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box_one">
+
+    </div>
+    <br>
+    <div class="box_two">
+        <font><b>Hao123</b></font>
+    </div>
+</body>
+
+</html>

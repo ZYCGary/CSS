@@ -1,0 +1,57 @@
+<!--
+行内元素：无width，height
+块元素：有width，height
+强制转换：display: block/inline
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>6_3</title>
+
+    <style type="text/css">
+        .nav {
+            width: 700px;
+            height: 80px;
+            background-color: black;
+            margin: 0 auto;
+        }
+
+        .nav a:link,
+        .nav:visited {
+            height: 78px;
+            /*border: 1px solid white;*/
+            padding-left: 30px;
+            padding-right: 30px;
+            display: block;
+            float: left;
+            line-height: 78px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">首页</a>
+        <a href="#">免费视频</a>
+        <a href="#">直播课程</a>
+        <a href="#">社区</a>
+        <a href="#">论坛</a>
+    </div>
+</body>
+
+</html>
+

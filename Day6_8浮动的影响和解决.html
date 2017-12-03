@@ -1,0 +1,60 @@
+<!--方法1:clear: left/right/both;-->
+<!--方法2:在父盒子内加入overflow:hidden：使父盒子得到一个自然高-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>6_8</title>
+
+    <style type="text/css">
+        .maxbox {
+            width: 900px;
+            border: 1px blue solid;
+            margin: 10px auto;
+            overflow: hidden;
+        }
+
+        .box_left {
+            width: 600px;
+            height: 550px;
+            border: 1px red solid;
+            margin: 10px;
+            float: left;
+        }
+
+        .box_right {
+            width: 250px;
+            height: 550px;
+            border: 1px red solid;
+            margin: 10px;
+            float: right;
+        }
+
+        .box_clear {
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="maxbox">
+        <!--浮动不占空间，所以box_left,box_right无法撑起maxbox-->
+        <div class="box_left"></div>
+        <div class="box_right"></div>
+
+        <!--加入清楚浮动的box_clear-->
+        <!--<div class="box_clear"></div>-->
+    </div>
+
+</body>
+
+</html>
+

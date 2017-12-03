@@ -1,0 +1,60 @@
+<!--
+定位
+position：static/fixed/relative/sbsolute
+absolute:绝对定位
+    不占空间
+    层级高于普通元素
+    不结合定位坐标：默认位置
+    结合定位坐标：以祖先元素作为参考原点，即一直想上查找，直至发现第一个设置了定位的祖先元素或body
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>6_10</title>
+
+    <style type="text/css">
+        .one {
+            width: 600px;
+            height: 600px;
+            border: 1px solid red;
+            margin: 10px auto;
+        }
+
+        .two {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin-left: 10px;
+        }
+
+        .three {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            right: 20px;
+            top: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="one">
+        <div class="two">
+            <div class="three"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+

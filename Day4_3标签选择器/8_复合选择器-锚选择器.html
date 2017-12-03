@@ -1,0 +1,57 @@
+<!--
+伪类（锚）选择器
+伪类必须有链接<a>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>4_2_2</title>
+
+    <style type="text/css">
+        /*未访问的链接*/
+
+        a:link {
+            color: black;
+            text-decoration: none; //文本去掉下划线
+        }
+
+        /*访问过的链接*/
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        /*鼠标移动到链接上*/
+
+        a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        /*hold链接*/
+
+        a:active {
+            color: green;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <a href="http://www.google.com.au">Google</a>
+    <a href="#">Baidu</a>
+    <a href="1_%E5%9F%BA%E6%9C%AC%E9%80%89%E6%8B%A9%E5%99%A8-%E6%A0%87%E7%AD%BE%E9%80%89%E6%8B%A9%E5%99%A8.html">LALALA</a>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!--
+盒子模型
+内容区：width height
+边框：border
+内边距(padding): 内容和边框的距离：padding-top/right/bottom/left
+外边距(margin):边距以外的距离：margin-top/right/bottom/left
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>5_7</title>
+
+    <style type="text/css">
+        .one {
+            width: 400px;
+            height: 300px;
+            border: 1px solid blue;
+
+            /*
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+*/
+            padding: 10px 20px 30px 40px;
+            /*top right bottom right*/
+            padding: 10px 20px 30px;
+            /*top left&right bottom*/
+            padding: 10pz 30px;
+            /*top&bottom left&right*/
+            padding: 10px;
+            /*all*/
+            margin-bottom: 30px;
+        }
+
+        .two {
+            width: 400px;
+            height: 300px;
+            border: 1px solid red;
+            /*间距取最大值50，而不是叠加30+50*/
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="one">
+        If you have not completed six months of your principal course (the main course of study you are undertaking) and you want to change your education provider, the ESOS National Code explains the circumstances in which this will be possible. Unless special circumstances apply, you usually need to have permission from your existing education provider to transfer to another education provider.
+    </div>
+    <div class="two">
+        If you have not completed six months of your principal course (the main course of study you are undertaking) and you want to change your education provider, the ESOS National Code explains the circumstances in which this will be possible. Unless special circumstances apply, you usually need to have permission from your existing education provider to transfer to another education provider.
+    </div>
+</body>
+
+</html>
